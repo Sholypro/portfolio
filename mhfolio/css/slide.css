@@ -1,0 +1,82 @@
+#home{
+    background-image: url("/img/colorless.mokup.png");
+    height: 100vh;
+}
+
+#portfolio{
+    background-image: url("/img/unichamps.mokup.png");
+    height: 100vh;
+}
+
+#contact{
+    background-image: url("/img/colorless.mokup.png");
+    height: 100vh;
+}
+
+#photoAbout{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+#photoAbout img{
+    width: 300px ;
+    height: auto;
+    box-shadow: -10px  10px 0px black;
+}
+
+
+.section p{
+    max-width: 30%;
+    text-align: justify;
+    font-size: 17px;
+    padding-top: 70px;    
+    
+}
+
+.page1{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30vh 0;
+    
+}
+@media screen and (max-width: 1200px){
+    .page1{
+    
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 15vh 0;
+        
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .page1{
+        display: flex;
+        text-align: center!important;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 180px 0;
+    }
+    #photoAbout img{
+        width: 40% ;
+        height: auto;
+        margin: 0 30%;
+        box-shadow: -10px  10px 0px black;
+    }
+    .section p{
+        
+        text-align: justify;
+        font-size: 17px;
+        padding-top: 70px;  
+        max-width: 84%;
+        margin: 0 16%;  
+    
+    }
+}

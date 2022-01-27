@@ -1,0 +1,1 @@
+<header><h1>L'en-tête de la page</h1> </header>

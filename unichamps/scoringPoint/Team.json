@@ -1,0 +1,30 @@
+teams = 
+    [
+        {
+            "Name" : "Epic Five",
+            "Points": "0" 
+        },
+  
+        {
+            "Name" : "Only MMI",
+            "Points": "0" 
+        },
+  
+        {
+            "Name" : "Le Dojo",
+            "Points": "0" 
+        },
+        {
+            "Name" : "Unichams",
+            "Points": "0" 
+        },
+        {
+            "Name" : "Guardians",
+            "Points": "0" 
+        },
+        {
+            "Name" : "Jungle Diff",
+            "Points": "0" 
+        },
+        
+    ]

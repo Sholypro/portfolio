@@ -1,0 +1,825 @@
+body {
+  padding-top: 90px;
+  height: 100%;
+  width: 100%;
+  background-color: #202020;
+  font-family: sans-serif;
+  margin: 0;
+  color: white;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #535353 #ebebeb;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #535353;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #535353;
+  border-radius: 20px;
+  border: 3px solid #ebebeb;
+}
+
+#lopez {
+  width: 60%;
+  max-width: 500px;
+  padding-left: 6%;
+  margin: 0;
+  position: absolute;
+
+}
+
+@media screen and (min-width: 1750px) {
+  #lopez {
+    max-width: 490px;
+    padding-left: 7%;
+  }
+
+}
+
+.header {
+  background-color: #202020;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  /* Mise en forme */
+  height: 65px;
+  width: 100%;
+  border-bottom: solid black;
+  font-family: 'Krona One', sans-serif;
+  padding-top: 15px;
+  padding-left: 0px;
+  margin-bottom: 90px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.884);
+  user-select: none;
+}
+
+.navbar {
+  position: relative;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-decoration: none;
+  margin-right: 15%;
+  width: 35%;
+  max-width: 500px;
+  font-weight: 500;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: whitesmoke;
+  text-transform: uppercase;
+
+}
+
+.navbar li a:hover {
+  text-decoration: none;
+  color: rgb(175, 175, 175);
+  text-transform: uppercase;
+  transition: 0.5s;
+
+}
+
+.navbar ul {
+  text-decoration: none;
+}
+
+.navbar li {
+  text-decoration: none !important;
+  list-style-type: none;
+}
+
+.navbar ul {
+  text-decoration: none;
+}
+
+.carousel p {
+  padding: 5vh 0;
+  color: white;
+  font-size: 2vmin;
+}
+
+h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 43px;
+  font-family: 'Krona One', sans-serif;
+  font-size: 29px;
+}
+
+
+
+/* ABOUT */
+
+#CV {
+  background-color: #414141;
+  color: #bebebe;
+  padding: 12px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+  margin-left: 45%;
+  margin-bottom: 50px;
+}
+
+#CV:hover {
+  background-color: #575757;
+}
+
+#CV:active {
+  background-color: #2c2c2c;
+}
+
+@media screen and (min-width : 1151px){
+  
+#title {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+#about img {
+  border-radius: 20px;
+  height: 240px;
+  width: auto;
+  margin: 0 18% 0 18%;
+
+}
+
+#about img {
+  border-radius: 20px;
+  height: 240px;
+  width: auto;
+  margin-right: 110px;
+  margin-left: 0;
+}
+
+#about p {
+  margin: 0;
+  max-width: 300px;
+  padding: 15px 0 0 0;
+  text-align: justify !important;
+  font-size: 20px;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+
+#contact img {
+  width: 100px;
+  height: 60px;
+  border-radius: 25px;
+  background: rgb(26, 26, 26);
+  box-shadow: 10px -10px 0px rgb(41, 41, 41);
+}
+
+#contact img:hover {
+  width: 100px;
+  height: 60px;
+  border-radius: 25px;
+  transition: 0.2s;
+  background: rgb(44, 44, 44);
+  box-shadow: 10px -10px 0px rgb(78, 78, 78);
+}
+
+}
+
+@media screen and (min-width: 531px) and (max-width: 1150px) {
+
+  /*BIGPAD*/
+  .carousel p {
+    padding: 5vh 0;
+    color: white;
+    font-size: 20px;
+  }
+
+
+  #title {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+  }
+
+  #about img {
+    border-radius: 20px;
+    height: 240px;
+    width: auto;
+    margin: 0 10% 0 0 !important;
+
+  }
+
+  #about p {
+    margin: 0;
+    max-width: 300px;
+    padding: 0;
+    font-size: 20px;
+    text-align: justify !important;
+  }
+
+  #about {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+  }
+
+  #contact img {
+    width: 100px;
+    height: 60px;
+    border-radius: 25px;
+    background: rgb(26, 26, 26);
+    box-shadow: 10px -10px 0px rgb(41, 41, 41);
+  }
+  
+  #contact img:hover {
+    width: 100px;
+    height: 60px;
+    border-radius: 25px;
+    transition: 0.2s;
+    background: rgb(44, 44, 44);
+    box-shadow: 10px -10px 0px rgb(78, 78, 78);
+  }
+
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 570px) {
+  .carousel p {
+    padding: 5vh 8px;
+    color: white;
+    font-size: 20px;
+    text-align: justify !important;
+
+  }
+
+
+  #title {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+  }
+
+  #about img {
+    border-radius: 20px;
+    height: 240px;
+    width: auto;
+    margin: 0 6% 0 0 !important;
+
+  }
+
+  #about p {
+    width: 100%;
+    margin: 15px 10px 0 10px;
+    text-align: justify !important;
+    font-size: 20px;
+    padding: 0;
+  }
+
+ 
+
+  #about {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+  }
+
+  #CV {
+    background-color: #414141;
+    color: #bebebe;
+    padding: 12px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    margin-left: 30%;
+  }
+  #contact img {
+    width: 70px;
+    height: 50px;
+    border-radius: 25px;
+    background: rgb(26, 26, 26);
+    box-shadow: 10px -10px 0px rgb(41, 41, 41);
+    margin-bottom: 50px;
+  }
+  
+  #contact img:hover {
+    width: 70px;
+    height: 50px;
+    border-radius: 25px;
+    transition: 0.2s;
+    background: rgb(44, 44, 44);
+    box-shadow: 10px -10px 0px rgb(78, 78, 78);
+  }
+  
+
+
+}
+
+
+
+
+
+/* CAROUSEL DE SITE */
+
+.carousel {
+  background: rgb(32, 32, 32);
+}
+
+.carousel-cell {
+  margin-top: 30px;
+  width: 70%;
+  /* full width */
+  margin-right: 50px;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+.carousel-cell img {
+  border-radius: 50px 50px 0 0;
+  transition: 0.4s;
+}
+
+.carousel-cell img:hover {
+  transform: scale(1.007);
+  background-image: url("./img/colorless.mokup.png");
+}
+
+
+/* GRID IMG */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px 30px;
+  padding: 3% 15%;
+  grid-template-areas:
+    "c1 c2 c3"
+    "c4 c5 c6"
+    "c7 c8 c9"
+    "c10 c11 c12"
+    "c13 c14 c15"
+    "c16 c17 c18";
+}
+
+.grid-container img {
+  width: 100%;
+  /* cursor: zoom-in; */
+}
+
+
+
+.image-zoom:hover {
+  transform: scale(1.1);
+}
+
+.image-zoom:focus {
+  transform: scale(3.1);
+}
+
+.image-zoom {
+  transition: 0.4s;
+}
+
+.c1 {
+  grid-area: c1;
+}
+
+.c2 {
+  grid-area: c2;
+}
+
+.c3 {
+  grid-area: c3;
+}
+
+.c4 {
+  grid-area: c4;
+}
+
+.c5 {
+  grid-area: c5;
+}
+
+.c6 {
+  grid-area: c6;
+}
+
+.c7 {
+  grid-area: c7;
+}
+
+.c8 {
+  grid-area: c8;
+}
+
+.c9 {
+  grid-area: c9;
+}
+
+.c10 {
+  grid-area: c10;
+}
+
+.c11 {
+  grid-area: c11;
+}
+
+.c12 {
+  grid-area: c12;
+}
+
+.c13 {
+  grid-area: c13;
+}
+
+.c14 {
+  grid-area: c14;
+}
+
+.c15 {
+  grid-area: c15;
+}
+
+.c16 {
+  grid-area: c16;
+}
+
+.c17 {
+  grid-area: c17;
+}
+
+.c18 {
+  grid-area: c18;
+}
+
+
+
+
+/* PARTIE VIDEO */
+iframe {
+  display: block;
+  align-items: center;
+  margin: 90px 15%;
+
+  height: 70vw;
+  max-height: 780px;
+}
+
+/* charte graphique */
+@media screen and (max-width: 1051px) {
+  #nomobile {
+    display: none !important;
+  }
+
+}
+
+@media screen and (min-width: 1050px) {
+  #onlymobile {
+    display: none !important;
+  }
+
+
+}
+
+#onlymobile #CG p {
+  font-size: 20px;
+}
+
+#CG a {
+
+  color: white;
+  background-color: rgb(26, 26, 26);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#CG a:hover {
+
+  color: white;
+  background-color: rgb(44, 44, 44);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-decoration: none;
+
+}
+
+#CG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE PART */
+
+@media screen and (max-width: 950px) {
+  .header {
+    background-color: rgb(32, 32, 32);
+    height: 100px !important;
+    width: 100%;
+    border-bottom: solid black;
+
+  }
+
+  .navbar {
+    position: relative;
+    float: right;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    color: whitesmoke;
+    text-decoration: none;
+    padding-left: 10px;
+    margin-right: 30px;
+    width: 30%;
+  }
+
+  .carousel-cell img {
+    border-radius: 30px 30px 0 0 !important;
+
+  }
+
+  .carousel-cell {
+    margin-top: 30px;
+    width: 75%;
+    /* full width */
+    margin-right: 50px;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+  }
+
+
+  h2 {
+    color: white;
+    margin-left: 5%;
+    vertical-align: middle;
+    position: relative;
+    float: left;
+    font-size: 1.1em;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px 30px;
+    padding: 3% 5%;
+    grid-template-areas:
+      "c1 c2 c3"
+      "c4 c5 c6"
+      "c7 c8 c9"
+      "c10 c11 c12"
+      "c13 c14 c15"
+      "c16 c17 c18";
+  }
+
+  .grid-container img {
+    width: 100%;
+    /* cursor: zoom-in; */
+  }
+
+}
+
+@media screen and (max-width: 445px) {
+  .carousel-cell {
+    margin-top: 30px;
+    width: 95%;
+    /* full width */
+
+    margin-right: 50px;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+  }
+}
+
+/* Show the banner if the user disables animations in the OS level */
+
+
+/* FIN RESPONSIVE */
+
+
+
+
+
+#contact {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5% 0 10%;
+}
+
+#scrollUp {
+  position: fixed;
+  bottom: 10px;
+  right: -100px;
+  opacity: 0.75;
+}
+
+/* FORM */
+input[type=text], textarea, input[type=email] {
+  width: 100%;
+  height: auto;
+  padding: 12px;
+  border: 1px solid rgb(20, 18, 18);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+  background-color: #2e2e2e;
+  font-weight: bold;
+}
+
+label {
+  margin-right: 0px;
+  margin-left: 0px;
+
+  width: 100%;
+  font-weight: bold;
+}
+
+input[type=submit] {
+  background-color: #414141;
+  color: #bebebe;
+  padding: 12px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #818181;
+  color: #0c0c0c;
+}
+
+.cible {
+  display: flex;
+  align-items: center;
+  justify-content: start
+}
+
+.contactForm {
+  background-color: #161515b4;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+
+
+.containere {
+  /* Ajouter box-sizing */
+  border-radius: 5px;
+  padding: 20px;
+  width: 50%;
+  /* redéfinition 400 + 2*20 */
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 745px) {
+  .containere {
+    /* Ajouter box-sizing */
+    border-radius: 5px;
+    padding: 20px;
+    width: 90%;
+    /* redéfinition 400 + 2*20 */
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .cible {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+#scrollUp svg {
+  color: rgb(255, 255, 255);
+}
+
+/* CSS for responsive iframe */
+/* ========================= */
+
+/* outer wrapper: set max-width & max-height; max-height greater than padding-bottom % will be ineffective and height will = padding-bottom % of max-width */
+#Iframe-Master-CC-and-Rs {
+  max-width: 85%;
+  height: auto;
+  max-height: 1000px;
+  overflow: hidden;
+}
+
+/* inner wrapper: make responsive */
+.responsive-wrapper {
+  position: relative;
+  height: 0;
+  /* gets height from padding-bottom */
+
+  /* put following styles (necessary for overflow and scrolling handling on mobile devices) inline in .responsive-wrapper around iframe because not stable in CSS:
+    -webkit-overflow-scrolling: touch; overflow: auto; */
+
+}
+
+.responsive-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* padding-bottom = h/w as % -- sets aspect ratio */
+/* YouTube video aspect ratio */
+.responsive-wrapper-wxh-572x612 {
+  padding-bottom: 107%;
+}
+
+/* general styles */
+/* ============== */
+.set-border {
+  border: 5px inset #313131;
+}
+
+.set-padding {
+  padding: 40px;
+}
+
+.set-margin {
+  margin: 30px;
+}
+
+.center-block-horiz {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* DOTPOINT */

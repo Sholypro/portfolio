@@ -1,0 +1,828 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #E9E6DF;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  
+  ;
+
+}
+
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #705c41 #ebebeb;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #705c41;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #705c41;
+  border-radius: 20px;
+  border: 3px solid #ebebeb;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+ 
+}
+
+.sautemoi {
+  animation: 2.5s floatGently ease-in-out infinite;
+}
+
+@keyframes floatGently {
+  from, to {
+    transform: translate3d(0, 0, 0)
+  }
+
+  50% {
+    transform: translate3d(0, 10px, 0)
+  }
+}
+
+
+
+
+/* FONT */
+@font-face {
+  font-family: "Rockabye";
+  src: url("./font/Rockabye-Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "constantia";
+  src: url("./font/constan.ttf") format("ttf");
+}
+
+
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Rockabye";
+}
+
+h1 {
+  font-size: 70px;
+  color: #201916;
+  text-align: center;
+}
+
+/* FIN FONT */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#bg {
+  background-color: #5B4A32;
+  height: 70vw;
+  width: 47%;
+  max-width: 500px;
+  max-height: 800px;
+  position: absolute;
+  top: 400px;
+  box-shadow: 4px 4px 14px #4f4f4f;
+  border-radius: 0 15px 15px 0;
+}
+
+#logo {
+  position: absolute;
+  top: 280px;
+  height: auto;
+  width: 47%;
+  max-width: 500px;
+
+}
+
+p#presentation {
+
+  background-color: #89765c;
+  color: #201916;
+  padding: 30px;
+  width: 50%;
+  height: auto;
+  border-radius: 15px 0 0 15px;
+  position: static;
+  overflow-y: auto;
+  box-shadow: 4px 4px 14px #4f4f4f;
+  font-size: 22px;
+  text-align: justify;
+  margin: 15% 0 5% auto;
+
+}
+
+
+
+
+@media screen and (min-width: 526px) and (max-width: 970px) {
+  h1 {
+    font-size: 60px;
+    color: #12180D;
+    text-align: center;
+  }
+
+  #bg {
+    background-color: #5B4A32;
+    height: 600px;
+    width: 60%;
+    position: absolute;
+    top: 450px;
+    border-radius: 0 15px 15px 0;
+  }
+
+  #logo {
+    position: absolute;
+    top: 320px;
+    height: 650px;
+    width: auto;
+
+
+  }
+
+  p#presentation {
+    background-color: #89765c;
+    color: #201916;
+    position: relative;
+    padding: 30px;
+    width: 90%;
+    height: auto;
+    border-radius: 15px 0 0 15px;
+    overflow-y: auto;
+    font-size: 20px;
+    text-align: justify;
+
+  }
+
+  #presentation.Puno {
+
+    margin: 800px 0 30px 10%;
+
+  }
+
+  #presentation.Pdos {
+    margin: 10% 0 30px 10%;
+
+  }
+
+
+ #regi{
+    width: 70%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    margin-right: 0px;
+    position: relative;
+  margin-left: 30%;
+  margin-top: 30px;
+  box-shadow: 4px 4px 14px #4f4f4f;
+  }
+  
+ #caster{
+    margin-top: 30px;
+    width: 70%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+  position: relative;
+  box-shadow: 4px 4px 14px #4f4f4f;
+  }
+
+}
+
+@media screen and (max-width: 525px) {
+  h1 {
+    font-size: 60px;
+    color: #12180D;
+    text-align: center;
+  }
+
+  #bg {
+    background-color: #5B4A32;
+    height: 600px;
+    width: 95%;
+    position: absolute;
+    top: 450px;
+    border-radius: 0 15px 15px 0;
+  }
+
+  #logo {
+    position: absolute;
+    top: 350px;
+    height: 650px;
+    width: auto;
+
+
+  }
+
+  p#presentation {
+    background-color: #89765c;
+    color: #201916;
+    position: relative;
+    padding: 30px;
+    width: 90%;
+    height: auto;
+    border-radius: 15px 0 0 15px;
+    overflow-y: auto;
+    font-size: 20px;
+    text-align: justify;
+
+  }
+
+  #presentation.Puno {
+
+    margin: 800px 0 30px 10%;
+
+  }
+
+  #presentation.Pdos {
+    margin: 10% 0 30px 10%;
+
+  }
+  #regi{
+    width: 70%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    margin-right: 0px;
+    position: relative;
+  margin-left: 30%;
+  margin-top: 30px;
+  box-shadow: 4px 4px 14px #4f4f4f;
+  }
+  
+  #caster{
+    margin-top: 30px;
+    width: 70%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+  position: relative;
+  box-shadow: 4px 4px 14px #4f4f4f;
+  
+  }
+}
+
+embed {
+  margin: 0 10%;
+  width: 80%;
+  height: 80%;
+}
+
+@media screen and (max-width: 1500px) {
+  embed {
+    margin: 0 4%;
+    width: 92%;
+    height: 80%;
+  }
+
+  .carousel-cell {
+    margin-top: 30px;
+    width: 75%;
+    /* full width */
+    margin-right: 50px;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+  }
+
+  .set-padding {
+    padding: 20px !important;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  embed {
+    margin: 0 0;
+    width: 100%;
+    height: 90%;
+  }
+
+}
+
+@media screen and (max-width: 1100px) {
+  #nomobile {
+    display: none !important;
+  }
+
+  #regi{
+    width: 70%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    margin-right: 0px;
+    position: relative;
+  margin-left: 30%;
+  margin-top: 30px;
+  box-shadow: 4px 4px 14px #4f4f4f;
+  }
+  
+  #caster{
+    margin-top: 30px;
+    width: 70%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+  position: relative;
+  box-shadow: 4px 4px 14px #4f4f4f;
+  
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  #onlymobile {
+    display: none !important;
+  }
+  #regi {
+    width: 40%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    margin-right: 0px;
+    position: relative;
+    margin-left: 60%;
+    box-shadow: 4px 4px 14px #4f4f4f;
+  }
+  
+  #caster {
+    margin-top: 30px;
+    width: 40%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    position: relative;
+    box-shadow: 4px 4px 14px #4f4f4f;
+  
+  }
+
+}
+
+
+
+#onlymobile #CG p {
+  font-size: 20px;
+}
+
+#CG a {
+
+  color: white;
+  background-color: #89765E;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#CG a:hover {
+
+  color: white;
+  background-color: #695a48;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-decoration: none;
+
+}
+
+#CG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+
+.carousel-cell {
+  margin-top: 30px;
+  width: 100vh;
+  /* full width */
+  height: 100vh;
+  margin-right: 50px;
+
+}
+
+/* CSS for responsive iframe */
+/* ========================= */
+
+/* outer wrapper: set max-width & max-height; max-height greater than padding-bottom % will be ineffective and height will = padding-bottom % of max-width */
+#Iframe-Master-CC-and-Rs {
+  max-width: 85%;
+  height: auto;
+  max-height: 1000px;
+  overflow: hidden;
+}
+
+/* inner wrapper: make responsive */
+.responsive-wrapper {
+  position: relative;
+  height: 0;
+  /* gets height from padding-bottom */
+
+  /* put following styles (necessary for overflow and scrolling handling on mobile devices) inline in .responsive-wrapper around iframe because not stable in CSS:
+    -webkit-overflow-scrolling: touch; overflow: auto; */
+
+}
+
+.responsive-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* padding-bottom = h/w as % -- sets aspect ratio */
+/* YouTube video aspect ratio */
+.responsive-wrapper-wxh-572x612 {
+  padding-bottom: 107%;
+}
+
+/* general styles */
+/* ============== */
+.set-border {
+  border: 5px inset #313131;
+}
+
+.set-padding {
+  padding: 40px;
+}
+
+.set-margin {
+  margin: 30px;
+}
+
+.center-block-horiz {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* DOTPOINT */
+
+
+
+
+
+
+
+/* GRID */
+
+
+.containerr {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  width: 100%;
+  height: 90%;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* For presentation only, no need to copy the code below */
+
+.containerr * {
+
+
+  position: relative;
+
+}
+
+.didi {
+  display: flex;
+  justify-content: center;
+}
+
+.containerr *:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.idAgent {
+  position: absolute;
+  height: auto;
+  width: 350px;
+  z-index: 3;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 190px;
+  box-shadow: 0px 0px 15px #5b4a32c7;
+}
+
+.descAgent {
+  top: -20px;
+  display: none;
+  position: inherit;
+  padding: 25px;
+  height: 350px;
+  width: 350px;
+  background-color: #5b4a32da;
+  font-size: 20px;
+  z-index: 30;
+  border: 1px solid black;
+  border-radius: 190px;
+  padding: 80px;
+}
+
+.didi:hover .descAgent {
+  display: block !important;
+  height: 350px;
+  width: 350px;
+
+
+}
+
+.didi:hover .idAgent {
+  position: absolute;
+  height: auto;
+  width: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 576px) and (max-width: 1100px) {
+
+  .containerr {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 30px 30px !important;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+      "agent1 agent2"
+      "agent3 agent4"
+      "agent5 agent6";
+    width: 100%;
+    height: 90%;
+  }
+
+  .agent1 {
+    grid-area: agent1;
+  }
+
+  .agent2 {
+    grid-area: agent2;
+  }
+
+  .agent3 {
+    grid-area: agent3;
+  }
+
+  .agent4 {
+    grid-area: agent4;
+  }
+
+  .agent5 {
+    grid-area: agent5;
+  }
+
+  .agent6 {
+    grid-area: agent6;
+  }
+
+
+
+  .idAgent {
+    position: absolute;
+    height: auto;
+    width: 250px;
+    z-index: 3;
+
+    border: 1px solid black;
+  }
+
+  .descAgent {
+    top: -20px;
+    display: none;
+    position: inherit;
+    height: 250px;
+    width: 250px;
+    background-color: #5b4a32c7;
+    font-size: 20px;
+    z-index: 30;
+    border: 1px solid black;
+    border-radius: 190px;
+    padding: 52px
+  }
+
+  .didi:hover .descAgent {
+    display: block !important;
+    height: 250px;
+    width: 250px;
+  }
+
+  .didi:hover .idAgent {
+    position: absolute;
+    height: auto;
+    width: 250px;
+  }
+
+
+
+}
+
+@media screen and (max-width:575px) {
+  .containerr {
+    margin-top: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+      "agent1"
+      "agent2"
+      "agent3"
+      "agent4"
+      "agent5"
+      "agent6";
+    width: 100%;
+    height: 100%;
+
+  }
+
+
+  .agent1 {
+    grid-area: agent1;
+  }
+
+  .agent2 {
+    grid-area: agent2;
+  }
+
+  .agent3 {
+    grid-area: agent3;
+  }
+
+  .agent4 {
+    grid-area: agent4;
+  }
+
+  .agent5 {
+    grid-area: agent5;
+  }
+
+  .agent6 {
+    grid-area: agent6;
+  }
+
+  .idAgent {
+    position: absolute;
+    height: auto;
+    width: 250px;
+    z-index: 3;
+    border: 1px solid black;
+
+  }
+
+
+  .descAgent {
+    top: -20px;
+    display: none;
+    position: inherit;
+    height: 250px;
+    width: 250px;
+    background-color: #5b4a32c7;
+    font-size: 20px;
+    z-index: 30;
+    border: 1px solid black;
+    border-radius: 190px;
+    padding: 42px
+  }
+
+  .didi:hover .descAgent {
+    display: block !important;
+    height: 250px;
+    width: 250px;
+  }
+
+  .didi:hover .idAgent {
+    position: absolute;
+    height: auto;
+    width: 250px;
+  }
+
+}
+
+/* FOOTER */
+footer {
+
+  background: #5B4A32;
+
+  position: relative;
+
+  bottom: 0;
+
+  width: 100%;
+
+  padding-top: 32px;
+
+  height: 75px;
+
+}
+
+footer a {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  word-spacing: 5px;
+  color: white;
+  font-family: "constantia";
+}
+
+footer a:hover {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  word-spacing: 5px;
+  color: rgb(170, 170, 170);
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+li {
+  list-style: none;
+}
+
+li a:hover {
+  display: block;
+
+  color: rgb(97, 97, 97);
+
+}
+
+#lili {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#twitter-widget-1{
+  margin: 20px 0;
+  padding:  0 10%;
+  max-width: 1000px;
+}

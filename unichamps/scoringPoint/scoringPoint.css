@@ -1,0 +1,67 @@
+#admin-part{
+  height: 25px;
+  width:25px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+ 
+  background-color: #040e16fa!important;
+}
+
+#admin-part svg{
+  color:  whitesmoke;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#admin-part svg:hover{
+  color:  rgb(112, 112, 112);
+  align-items: center;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+.Points
+{
+ width: 5%;
+}
+.Rank
+{
+ width: 10%;
+}
+.Team
+{
+  width: 60%;
+  text-align: center;
+}
+main{display: flex;
+justify-content: center;}
+
+  #Leaderboard {
+    overflow: hidden; /* Makes cutoff work */
+    color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto ;
+    border: 2px solid black; /* Just for aesthetics, can be removed */
+  }
+
+  table{
+    margin: 30px auto;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.637);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    max-width: 90%;
+    border-collapse: separate !important;
+  }
+th{
+  color: whitesmoke;
+  
+}
+
+#dada{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
