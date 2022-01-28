@@ -35,7 +35,8 @@ body {
   height: 100%;
   width: 100%;
   background-color: var(--body-background-color);
-  font-family: sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 300;
   margin: 0;
   color: var(--body-txt-color);
 
@@ -76,18 +77,12 @@ html {
   width: 60%;
   max-width: 500px;
   padding-left: 6%;
-  margin: 0;
+  margin: auto;
   position: absolute;
 
 }
 
-@media screen and (min-width: 1750px) {
-  #lopez {
-    max-width: 490px;
-    padding-left: 7%;
-  }
 
-}
 
 .header {
   background-color: var(--header-color);
@@ -98,7 +93,8 @@ html {
   height: 65px;
   width: 100%;
   border-bottom: solid black;
-  font-family: 'Krona One', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
   padding-top: 15px;
   padding-left: 0px;
   margin-bottom: 90px;
@@ -159,7 +155,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: 43px;
-  font-family: 'Krona One', sans-serif;
+   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 29px;
 
 }
@@ -190,8 +186,46 @@ h1 {
 #CV:active {
   background-color: var(--body-button-press);
 }
+@media screen and (min-width: 1750px) {
+  #lopez {
+    max-width: 490px;
+    padding-left: 7%;
+  }
 
+}
 @media screen and (min-width : 1151px){
+
+  .choise{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px auto;
+    color: var( --body-txt-color);
+  }
+  a{
+    text-decoration: none ;
+    color: white;
+    font-weight: 400;
+  }
+  .choise li{
+    
+    background-color: var(--body-button-basic);
+  }
+  .choise li:hover{
+    
+    background-color: var(--body-button-hover);
+  }
+  .choise li:active{
+
+    background-color: var(--body-button-press);
+  }
+
+  .choise li {
+    padding: 13px;
+    border-radius: 7px;
+    list-style: none;
+  
+  }
   .alt{
     background-color: var(--body-altern-color);
     width: 100vw;
@@ -261,6 +295,38 @@ h1 {
 
 @media screen and (min-width: 531px) and (max-width: 1150px) {
 
+  .choise{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin: 50px auto;
+    color: var( --body-txt-color);
+  }
+  a{
+    text-decoration: none ;
+    color: white;
+    font-weight: 400;
+  }
+  .choise li{
+    
+    background-color: var(--body-button-basic);
+  }
+  .choise li:hover{
+    
+    background-color: var(--body-button-hover);
+  }
+  .choise li:active{
+
+    background-color: var(--body-button-press);
+  }
+
+  .choise li {
+    padding: 13px;
+    border-radius: 7px;
+    list-style: none;
+  
+  }
   /*BIGPAD*/
   .carousel p {
     padding: 5vh 0;
@@ -325,6 +391,49 @@ h1 {
 
 
 @media screen and (min-width: 200px) and (max-width: 570px) {
+
+
+  .choise{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin: 50px auto;
+    color: var( --body-txt-color);
+  }
+  a{
+    text-decoration: none ;
+    color: white;
+    font-weight: 400;
+   
+  }
+  ul{
+    padding: 0;
+  }
+  .choise li{
+    margin:  8px auto;
+    width:  180px;
+    text-align: center;
+    background-color: var(--body-button-basic);
+  }
+  .choise li:hover{
+    
+    background-color: var(--body-button-hover);
+  }
+  .choise li:active{
+
+    background-color: var(--body-button-press);
+  }
+
+  .choise li {
+    padding: 13px;
+    border-radius: 7px;
+    list-style: none;
+  
+  }
+
+
+
   .carousel p {
     padding: 5vh 8px;
     color: var(--body-txt-color);
@@ -769,6 +878,11 @@ input[type=submit]:hover {
   color: var(--body-txt-color);
 }
 
+input[type=submit]:active {
+  background-color: var(--body-button-press);
+  color: var(--body-txt-color);
+}
+
 .cible {
   display: flex;
   align-items: center;
@@ -885,3 +999,10 @@ input[type=submit]:hover {
 }
 
 /* DOTPOINT */
+
+footer{
+  text-align: center;
+  margin-bottom: 0;
+  padding: 20px 40px;
+}
+
